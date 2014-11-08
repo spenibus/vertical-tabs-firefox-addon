@@ -19,7 +19,6 @@
 
 
 #spenibus_verticalTabs_buttons {
-   margin-bottom:1em !important;
    border:1px outset #888 !important;
 }
 
@@ -53,6 +52,11 @@
    border:0 !important;
    margin:0 !important;
    padding:0 !important;
+}
+
+
+#spenibus_verticalTabs_container .tabbrowser-tabs {
+   padding-top:1em !important;
 }
 
 
