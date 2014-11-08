@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="chrome://vertical-tabs-spenibus/content/overlay.css"?>
+<!DOCTYPE overlay>
+<overlay id="spenibus_verticalTabs_overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+
+
+
+   <script
+      type="application/x-javascript"
+      src="chrome://vertical-tabs-spenibus/content/overlay.js"/>
+
+
+
+
+   <!-- keyboard shortcut: visibility toggle -->
+   <keyset>
+      <key
+         id="spenibus_verticalTabs_showHideKey"
+         keycode="VK_F8"
+         modifiers="control"
+         oncommand="spenibus_verticalTabs.showHide();"/>
+   </keyset>
+
+
+
+
+   <!-- context menu: visibility toggle -->
+   <popup id="contentAreaContextMenu">
+      <menuitem
+         id="spenibus_verticalTabs_showHideMenu"
+         label="Toggle tab bar"
+         oncommand="spenibus_verticalTabs.showHide();"/>
+   </popup>
+
+
+
+
+   <!-- add elements to browser -->
+   <hbox id="browser">
+
+      <!-- splitter between tabbar and browser -->
+      <splitter id="spenibus_verticalTabs_splitter"/>
+
+      <!-- vertical tabs container -->
+      <vbox
+         id="spenibus_verticalTabs_container"
+         width="200"
+         persist="width">
+
+         <!-- buttons container -->
+         <hbox id="spenibus_verticalTabs_buttons">
+
+            <!-- tabs single close button (since fx31) -->
+            <toolbarbutton
+               anonid="close-button"
+               class="tab-close-button close-icon"
+               fadein="true"
+               selected="true"
+               flex="1"
+               id="spenibus_verticalTabs_closeButton"
+               label="single close tab button"
+               tooltiptext="close tab"
+               oncommand="BrowserCloseTabOrWindow()">
+               <image class="toolbarbutton-icon"/>
+            </toolbarbutton>
+
+         </hbox>
+
+      </vbox>
+
+   </hbox>
+
+</overlay>
