@@ -1,6 +1,11 @@
+2015-03-18 22:01 +0000
+- updated readme
+- updated changelog format
+
+
 2014-11-08 01:50 +0000
-   - updated userChrome.css
+- updated userChrome.css
 
 
 2014-11-08 01:19 +0000
-   - initial release
+- initial release
