@@ -1,3 +1,7 @@
+vertical tabs
+http://spenibus.net
+
+
 This Firefox addon makes the tabbar vertical. Nothing else.
 Toggle tabbar visibility with contextual menu or "ctrl + F8".
 
