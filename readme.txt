@@ -1,5 +1,7 @@
 vertical tabs
 http://spenibus.net
+https://github.com/spenibus/vertical-tabs-firefox-addon
+https://gitlab.com/spenibus/vertical-tabs-firefox-addon
 
 
 This Firefox addon makes the tabbar vertical. Nothing else.
