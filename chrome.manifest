@@ -1,2 +1,2 @@
-content   vertical-tabs-spenibus                content/
-overlay   chrome://browser/content/browser.xul  chrome://vertical-tabs-spenibus/content/overlay.xul
+content    vertical-tabs-spenibus                  content/
+overlay    chrome://browser/content/browser.xul    chrome://vertical-tabs-spenibus/content/overlay.xul

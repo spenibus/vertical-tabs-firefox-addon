@@ -10,89 +10,89 @@
 ********************************************************************************
 ****************************************** addon: vertical tabs - extra style */
 #spenibus_verticalTabs_splitter {
-   width:0 !important;
-   min-width:0 !important;
-   border:0 !important;
-   border-left:2px groove #888 !important;
-   padding:0 !important;
+    width:0 !important;
+    min-width:0 !important;
+    border:0 !important;
+    border-left:2px groove #888 !important;
+    padding:0 !important;
 }
 
 
 #spenibus_verticalTabs_buttons {
-   border:1px outset #888 !important;
+    border:1px outset #888 !important;
 }
 
 
 #spenibus_verticalTabs_closeButton {
-   height:2em !important;
+    height:2em !important;
 }
 
 
 /* remove "all tabs" button */
 #spenibus_verticalTabs_container #alltabs-button {
-   display:none !important;
+    display:none !important;
 }
 
 
 /* remove "new tab" button */
 #spenibus_verticalTabs_container #new-tab-button {
-   display:none !important;
+    display:none !important;
 }
 
 
 /* remove "new tab" button bis */
 #spenibus_verticalTabs_container .tabs-newtab-button {
-   display:none !important;
+    display:none !important;
 }
 
 
 #spenibus_verticalTabs_container .tabbrowser-tabs,
 #spenibus_verticalTabs_container .tabbrowser-tabs * {
-   background:none !important;
-   border:0 !important;
-   margin:0 !important;
-   padding:0 !important;
+    background:none !important;
+    border:0 !important;
+    margin:0 !important;
+    padding:0 !important;
 }
 
 
 #spenibus_verticalTabs_container .tabbrowser-tabs {
-   padding-top:1em !important;
+    padding-top:1em !important;
 }
 
 
 /* allow scrollbar */
 #spenibus_verticalTabs_container .tabbrowser-tabs > .tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox {
-   padding:0 !important;
-   overflow:hidden !important;
-   overflow-y:auto !important;
+    padding:0 !important;
+    overflow:hidden !important;
+    overflow-y:auto !important;
 }
 
 
 #spenibus_verticalTabs_container .tabbrowser-tab {
-   width:auto !important;
-   min-width:0 !important;
-   max-width:none !important;
-   height:2em !important;
-   min-height:2em !important;
-   max-height:2em !important;
+    width:auto !important;
+    min-width:0 !important;
+    max-width:none !important;
+    height:2em !important;
+    min-height:2em !important;
+    max-height:2em !important;
 }
 
 
 /* hide close button on each tab */
 #spenibus_verticalTabs_container .tabbrowser-tab .tab-close-button {
-   display:none !important;
+    display:none !important;
 }
 
 
 #spenibus_verticalTabs_container .tabbrowser-tab .tab-content {
-   padding:0 0.25em !important;
-   margin:0 !important;
+    padding:0 0.25em !important;
+    margin:0 !important;
 }
 
 
 #spenibus_verticalTabs_container .tabbrowser-tab .tab-content > label {
-   padding:0 0.25em !important;
-   margin:0 !important;
+    padding:0 0.25em !important;
+    margin:0 !important;
 }
 
 
@@ -101,7 +101,7 @@
 #spenibus_verticalTabs_container .tabbrowser-tab .tab-background-end,
 #spenibus_verticalTabs_container .tabbrowser-tab:before,
 #spenibus_verticalTabs_container .tabbrowser-tab:after {
-   display:none !important;
+    display:none !important;
 }
 
 
@@ -109,7 +109,7 @@
 #spenibus_verticalTabs_container .tabbrowser-tab .tab-background,
 #spenibus_verticalTabs_container .scrollbutton-up,
 #spenibus_verticalTabs_container .scrollbutton-down {
-   border:1px outset #888 !important;
+    border:1px outset #888 !important;
 }
 
 
@@ -117,17 +117,17 @@
 #spenibus_verticalTabs_container .tabbrowser-tab:hover .tab-background,
 #spenibus_verticalTabs_container .scrollbutton-up:hover,
 #spenibus_verticalTabs_container .scrollbutton-down:hover {
-   background-color:rgba(255,255,255, 0.25) !important;
+    background-color:rgba(255,255,255, 0.25) !important;
 }
 
 
 /* selected tabs */
 #spenibus_verticalTabs_container .tabbrowser-tab[selected="true"] .tab-background {
-   background-color:rgba(255,255,255, 0.5) !important;
+    background-color:rgba(255,255,255, 0.5) !important;
 }
 
 
 /* pinned tabs */
 #spenibus_verticalTabs_container .tabbrowser-tab[pinned] .tab-background {
-   border-style:inset !important;
+    border-style:inset !important;
 }

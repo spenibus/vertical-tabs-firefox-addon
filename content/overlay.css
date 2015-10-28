@@ -1,11 +1,11 @@
 #TabsToolbar #tabbrowser-tabs .scrollbutton-up image {
-   -moz-transform:rotate(90deg) !important;
+    -moz-transform:rotate(90deg) !important;
 }
 
 #TabsToolbar #tabbrowser-tabs .scrollbutton-down image {
-   -moz-transform:rotate(-90deg) !important;
+    -moz-transform:rotate(-90deg) !important;
 }
 
 #TabsToolbar .tabbrowser-tab {
-   max-height:4em !important;
+    max-height:4em !important;
 }
