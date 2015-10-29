@@ -2,20 +2,20 @@
 spenibus_verticalTabs = {
 
 
-    /***************************************************************************/
+    /**************************************************************************/
     init : function() {
-
-        // update gui to show vertical tab bar
-        spenibus_verticalTabs.windowUpdate();
 
         // remove init listener
         window.removeEventListener('load', spenibus_verticalTabs.init, false);
+
+        // update gui to show vertical tab bar
+        spenibus_verticalTabs.windowUpdate();
     },
 
 
 
 
-    /***************************************************************************/
+    /**************************************************************************/
     windowUpdate : function() {
 
         // addon elements
@@ -33,6 +33,8 @@ spenibus_verticalTabs = {
         this.node_alltabsbutton = document.getElementById('alltabs-button');
 
 
+
+
         // group buttons horizontally
         this.node_buttons.appendChild(this.node_alltabsbutton);
         this.node_buttons.appendChild(this.node_newtabbutton);
@@ -43,6 +45,8 @@ spenibus_verticalTabs = {
             this.node_buttons,
             this.node_tabbrowsertabs.nextSibling
         );
+
+
 
 
         // put tab bar in vertical box
@@ -65,6 +69,8 @@ spenibus_verticalTabs = {
         this.node_buttons.setAttribute('context', 'tabContextMenu');
 
 
+
+
         // native override: this will put the dragged tab in place of the hovered tab (also x/y width/height)
         this.node_tabbrowsertabs._getDropIndex = function(event) {
 
@@ -81,6 +87,8 @@ spenibus_verticalTabs = {
             }
             return tabs.length;
         }
+
+
 
 
         // native override: target tab for link drop
@@ -110,7 +118,7 @@ spenibus_verticalTabs = {
 
 
 
-        // native override: -------------skip the animation, just get drop index
+        // native override: skip the animation, just get drop index
         this.node_tabbrowsertabs._animateTabMove = function(event) {
 
             // dragged tab
@@ -156,7 +164,7 @@ spenibus_verticalTabs = {
             }
 
 
-            //********************************** animation: move tabs to create gap
+            //******************************* animation: move tabs to create gap
             for(let tab of tabs) {
                 if(tab != draggedTab) {
                     let shift = getTabShift(tab, newIndex);
@@ -165,7 +173,7 @@ spenibus_verticalTabs = {
             }
 
 
-            //***************************************** animation: move dragged tab
+            //************************************** animation: move dragged tab
             // center dragged tab on mouse
             let tabCenter  = draggedTab.boxObject.screenY + draggedTab.boxObject.height/2;
             let translateY = screenY - tabCenter;
@@ -200,13 +208,29 @@ spenibus_verticalTabs = {
 
 
 
-    /***************************************************************************/
+    /**************************************************************************/
     showHide : function() {
 
         var hidden = !this.node_container.hidden;
 
         this.node_container.hidden = hidden;
         this.node_splitter.hidden  = hidden;
+    },
+
+
+
+
+    /**************************************************************************/
+    loadStyle : function() {
+
+        var node = document.getElementById('#browser');
+
+
+/*
+use an extra class "enabled" on tabbar
+*/
+
+
     },
 
 
