@@ -31,9 +31,7 @@
 
 
     <!-- add elements to browser -->
-    <hbox
-        id="browser"
-        class="spenibus_verticalTabs_compact">
+    <hbox id="browser">
 
         <!-- splitter between tabbar and browser -->
         <splitter id="spenibus_verticalTabs_splitter"/>
