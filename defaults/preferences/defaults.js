@@ -1,0 +1,1 @@
+pref('extensions.spenibus_verticalTabs.style_compact_enable', true);
